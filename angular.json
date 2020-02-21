@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "angularhtmltopdf": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angularhtmltopdf"
+    }
+  },
+  "defaultProject": "angularhtmltopdf",
+  "cli": {
+    "analytics": "cc1e19ac-3ed0-42e5-8148-dc6dbc21acae"
+  }
 }

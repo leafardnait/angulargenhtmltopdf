@@ -26,7 +26,7 @@ export class HtmltopdfComponent implements OnInit {
     html2canvas(div, options).then((canvas) => {
 
       var img = canvas.toDataURL("image/PNG");
-      var doc = new jsPDF('p', 'mm', 'a4', 1);
+      var doc = new jsPDF('l', 'mm', 'a4', 1);
 
       // Add image Canvas to PDF
       const bufferX = 5;

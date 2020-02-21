@@ -8,7 +8,8 @@ import html2canvas from 'html2canvas';
   styleUrls: ['./htmltopdf.component.css']
 })
 export class HtmltopdfComponent implements OnInit {
-
+  
+  studentNo = ['01', '02', '03', '04','05','06','07','08','09','10','11','12','13','14','15','16','17','18','19','20'];
   constructor() { }
 
   ngOnInit(): void {
@@ -17,7 +18,7 @@ export class HtmltopdfComponent implements OnInit {
   @ViewChild('content',{ 'static': true }) content: ElementRef;
   
   public downloadPDF(){
-    const div = document.getElementById('print-invoice');
+    const div = document.getElementById('print-monthly-attendance');
     const options = {
       background: 'white',
       scale: 3
@@ -29,8 +30,8 @@ export class HtmltopdfComponent implements OnInit {
       var doc = new jsPDF('l', 'mm', 'a4', 1);
 
       // Add image Canvas to PDF
-      const bufferX = 5;
-      const bufferY = 5;
+      const bufferX = 10;
+      const bufferY = 10;
       const imgProps = (<any>doc).getImageProperties(img);
       const pdfWidth = doc.internal.pageSize.getWidth() - 2 * bufferX;
       const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
@@ -38,7 +39,7 @@ export class HtmltopdfComponent implements OnInit {
 
       return doc;
     }).then((doc) => {
-      doc.output('dataurlnewwindow');
+      doc.output('save','Monthly Student Attendance Report.pdf');
     });
     // doc.output('save', 'filename.pdf'); //Try to save PDF as a file (not works on ie before 10, and some mobile devices)
     // doc.output('datauristring');        //returns the data uri string

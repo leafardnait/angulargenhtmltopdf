@@ -1,113 +1,136 @@
 <div id="content" #content>
-     <div class="invoice-box" id ="print-invoice">
-        <table cellpadding="0" cellspacing="0">
-            <tr class="top">
-                <td colspan="2">
-                    <table>
-                        <tr>
-                            <td class="title">
-                                <img src="assets/logo.png" style="width:100px; max-width:300px;">
-                            </td>
-                            
-                            <td>
-                                Invoice #: 123<br>
-                                Created: February 20, 2020<br>
-                                Due: February 20, 2020
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            
-            <tr class="information">
-                <td colspan="2">
-                    <table>
-                        <tr>
-                            <td>
-                                DreamIT<br>
-                                125 Burgos Guilig St. Brgy. Pogo Chico<br>
-                                Dagupan City Pangasinan
-                            </td>
-                            
-                            <td>
-                                DreamIT.<br>
-                                Kris Claridad<br>
-                                test@example.com
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            
-            <tr class="heading">
-                <td>
-                    Payment Method
-                </td>
-                
-                <td>
-                    Check #
-                </td>
-            </tr>
-            
-            <tr class="details">
-                <td>
-                    Check
-                </td>
-                
-                <td>
-                    1000
-                </td>
-            </tr>
-            
-            <tr class="heading">
-                <td>
-                    Item
-                </td>
-                
-                <td>
-                    Price
-                </td>
-            </tr>
-            
-            <tr class="item">
-                <td>
-                    Website design
-                </td>
-                
-                <td>
-                    PHP300.00
-                </td>
-            </tr>
-            
-            <tr class="item">
-                <td>
-                    Hosting (3 months)
-                </td>
-                
-                <td>
-                    PHP75.00
-                </td>
-            </tr>
-            
-            <tr class="item last">
-                <td>
-                    Domain name (1 year)
-                </td>
-                
-                <td>
-                    PHP10.00
-                </td>
-            </tr>
-            
-            <tr class="total">
-                <td></td>
-                
-                <td>
-                    Total: PHP385.00
-                </td>
-            </tr>
+    <div id="print-monthly-attendance">
+        <table cellspacing="0" border="0">
+            <colgroup width="24"></colgroup>
+            <colgroup width="175"></colgroup>
+            <colgroup span="35" width="33"></colgroup>
+            <colgroup width="35"></colgroup>
+            <tbody>
+                <tr class="trheader1">
+                    <td class="tdheader1" colspan=38>Senior High School Monthly Attendance Report</td>
+                </tr>
+                <tr class="trheader2">
+                    <td class="tdheader2" colspan=38>June/2019</td>
+                </tr>
+                <tr class="weekdays">
+                    <td height="10"></td>
+                    <td></td>
+                    <td class="Wborder"><span class="verticalText">Sat</span></td>
+                    <td class="Wborder"><span class="verticalText">Sun</span></td>
+                    <td class="Wborder"><span class="verticalText">Mon</span></td>
+                    <td class="Wborder"><span class="verticalText">Tue</span></td>
+                    <td class="Wborder"><span class="verticalText">Wed</span></td>
+                    <td class="Wborder"><span class="verticalText">Thu</span></td>
+                    <td class="Wborder"><span class="verticalText">Fri</span></td>
+                    <td class="Wborder"><span class="verticalText">Sat</span></td>
+                    <td class="Wborder"><span class="verticalText">Sun</span></td>
+                    <td class="Wborder"><span class="verticalText">Mon</span></td>
+                    <td class="Wborder"><span class="verticalText">Tue</span></td>
+                    <td class="Wborder"><span class="verticalText">Wed</span></td>
+                    <td class="Wborder"><span class="verticalText">Thu</span></td>
+                    <td class="Wborder"><span class="verticalText">Fri</span></td>
+                    <td class="Wborder"><span class="verticalText">Sat</span></td>
+                    <td class="Wborder"><span class="verticalText">Sun</span></td>
+                    <td class="Wborder"><span class="verticalText">Mon</span></td>
+                    <td class="Wborder"><span class="verticalText">Tue</span></td>
+                    <td class="Wborder"><span class="verticalText">Wed</span></td>
+                    <td class="Wborder"><span class="verticalText">Thu</span></td>
+                    <td class="Wborder"><span class="verticalText">Fri</span></td>
+                    <td class="Wborder"><span class="verticalText">Sat</span></td>
+                    <td class="Wborder"><span class="verticalText">Sun</span></td>
+                    <td class="Wborder"><span class="verticalText">Mon</span></td>
+                    <td class="Wborder"><span class="verticalText">Tue</span></td>
+                    <td class="Wborder"><span class="verticalText">Wed</span></td>
+                    <td class="Wborder"><span class="verticalText">Thu</span></td>
+                    <td class="Wborder"><span class="verticalText">Fri</span></td>
+                    <td class="Wborder"><span class="verticalText">Sat</span></td>
+                    <td class="Wborder"><span class="verticalText">Sun</span></td>
+                    <td class="Wborder" colspan="2"><span>Monthly/Total Less</span></td>
+                    <td class="Wborder" colspan="2"><span>Overall</span></td>
+                    <td class="Wborder" colspan="2"><span>Monthly/Excused</span></td>
+                </tr>
+                <tr class="monthdays">
+                    <td></td>
+                    <td class="Wborder" colspan="1" rowspan="1" height="70" align="left" valign="middle" style="width:250px"><b>Names</b></td>
+                    <td class="Wborder"><span class="verticalText">1\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">2\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">3\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">4\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">5\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">6\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">7\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">8\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">9\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">10\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">11\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">12\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">13\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">14\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">15\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">16\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">17\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">18\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">19\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">20\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">21\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">22\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">23\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">24\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">25\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">26\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">27\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">28\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">29\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">30\Jun</span></td>
+                    <td class="Wborder"><span class="verticalText">LATE</span></td>
+                    <td class="Wborder"><span class="verticalText ">ABS</span></td>
+                    <td class="Wborder"><span class="verticalText">LATE</span></td>
+                    <td class="Wborder"><span class="verticalText ">ABS</span></td>
+                    <td class="Wborder"><span class="verticalText">LATE</span></td>
+                    <td class="Wborder"><span class="verticalText ">ABS</span></td>
+                </tr>
+                <tr class="details-attendance" *ngFor="let studno of studentNo">
+                    <td class="Wborder" colspan="1" rowspan="1" align="right" valign="middle"><b>{{studno}}</b></td>
+                    <td class="Wborder"><span></span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>A</span></td>
+                    <td class="Wborder"><span>A</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>A</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>A</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>4</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>4</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                    <td class="Wborder"><span>0</span></td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </div>
-<div id="editor"></div>
 <button (click)="downloadPDF()">Export to pdf</button>

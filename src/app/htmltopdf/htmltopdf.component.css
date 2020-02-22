@@ -1,26 +1,40 @@
+#content{
+    width: 1000px;
+}
 table td{
     font-family: Arial;
     font-size:10px;
 }
-table .monthdays td.Wborder{
-    border: 1px solid #000000;
-    text-align:center;
-    vertical-align: bottom;
-}
-table .monthdays td:not(:first-child) span.verticalText {
-    writing-mode: tb-rl;
-    transform: rotate(-90deg);
-    height: 10%;
-}
 table .weekdays td.Wborder{
-    border: 1px solid #000000;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
     text-align:center;
     vertical-align: bottom;
+    white-space: nowrap;
+}
+table td.WborderRightOnly{
+    border-right: 1px solid #000000;
+}
+table td.WborderLeftOnly{
+    border-left: 1px solid #000000;
 }
 table .weekdays td:not(:first-child) span.verticalText {
     writing-mode: tb-rl;
     transform: rotate(-90deg);
     height: 10%;
+}
+table .monthdays td.Wborder{
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+    /* text-align:center; */
+    vertical-align: bottom;
+    white-space: nowrap;
+}
+table .monthdays td:not(:first-child) span.verticalText {
+    writing-mode: tb-rl;
+    transform: rotate(-90deg);
+    height: 10%;
+    text-align:left;
 }
 table .trheader1 .tdheader1{
     font-size: 12px;
@@ -32,9 +46,18 @@ table .trheader2 .tdheader2{
     font-weight: bold;
 }
 table .details-attendance td.Wborder{
-    border: 1px solid #000000;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
     text-align:center;
     white-space:nowrap;
     vertical-align: bottom;
     text-align: center;
+    width: 20px;
+    white-space: nowrap;
+}
+table .details-attendance td.Wborder:first-child{
+    border-left: 1px solid #000000;
+}
+table .details-attendance:last-child td{
+    border-bottom: 1px solid #000000;
 }

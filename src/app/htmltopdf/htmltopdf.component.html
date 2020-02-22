@@ -1,10 +1,10 @@
 <div id="content" #content>
     <div id="print-monthly-attendance">
-        <table cellspacing="0" border="0">
-            <colgroup width="24"></colgroup>
+        <table cellspacing="0">
+            <!-- <colgroup width="24"></colgroup>
             <colgroup width="175"></colgroup>
             <colgroup span="35" width="33"></colgroup>
-            <colgroup width="35"></colgroup>
+            <colgroup width="35"></colgroup> -->
             <tbody>
                 <tr class="trheader1">
                     <td class="tdheader1" colspan=38>Senior High School Monthly Attendance Report</td>
@@ -14,7 +14,7 @@
                 </tr>
                 <tr class="weekdays">
                     <td height="10"></td>
-                    <td></td>
+                    <td class="WborderRightOnly"></td>
                     <td class="Wborder"><span class="verticalText">Sat</span></td>
                     <td class="Wborder"><span class="verticalText">Sun</span></td>
                     <td class="Wborder"><span class="verticalText">Mon</span></td>
@@ -45,12 +45,12 @@
                     <td class="Wborder"><span class="verticalText">Fri</span></td>
                     <td class="Wborder"><span class="verticalText">Sat</span></td>
                     <td class="Wborder"><span class="verticalText">Sun</span></td>
-                    <td class="Wborder" colspan="2"><span>Monthly/Total Less</span></td>
-                    <td class="Wborder" colspan="2"><span>Overall</span></td>
-                    <td class="Wborder" colspan="2"><span>Monthly/Excused</span></td>
+                    <td class="Wborder" colspan="2" style="white-space:unset !important;font-size:9px">Monthly/Total Less</td>
+                    <td class="Wborder" colspan="2" style="white-space:unset !important;font-size:9px">Overall</td>
+                    <td class="Wborder" colspan="2" style="white-space:unset !important;font-size:9px">Monthly/Excuse</td>
                 </tr>
                 <tr class="monthdays">
-                    <td></td>
+                    <td class="WborderRightOnly"></td>
                     <td class="Wborder" colspan="1" rowspan="1" height="70" align="left" valign="middle" style="width:250px"><b>Names</b></td>
                     <td class="Wborder"><span class="verticalText">1\Jun</span></td>
                     <td class="Wborder"><span class="verticalText">2\Jun</span></td>
@@ -82,12 +82,12 @@
                     <td class="Wborder"><span class="verticalText">28\Jun</span></td>
                     <td class="Wborder"><span class="verticalText">29\Jun</span></td>
                     <td class="Wborder"><span class="verticalText">30\Jun</span></td>
-                    <td class="Wborder"><span class="verticalText">LATE</span></td>
-                    <td class="Wborder"><span class="verticalText ">ABS</span></td>
-                    <td class="Wborder"><span class="verticalText">LATE</span></td>
-                    <td class="Wborder"><span class="verticalText ">ABS</span></td>
-                    <td class="Wborder"><span class="verticalText">LATE</span></td>
-                    <td class="Wborder"><span class="verticalText ">ABS</span></td>
+                    <td class="Wborder"><span class="verticalTextM">LATE</span></td>
+                    <td class="Wborder"><span class="verticalTextM">ABSENCES</span></td>
+                    <td class="Wborder"><span class="verticalTextM">LATE</span></td>
+                    <td class="Wborder"><span class="verticalTextM">ABSENCES</span></td>
+                    <td class="Wborder"><span class="verticalTextM">LATE</span></td>
+                    <td class="Wborder"><span class="verticalTextM">ABSENCES</span></td>
                 </tr>
                 <tr class="details-attendance" *ngFor="let studno of studentNo">
                     <td class="Wborder" colspan="1" rowspan="1" align="right" valign="middle"><b>{{studno}}</b></td>

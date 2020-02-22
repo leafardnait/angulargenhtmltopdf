@@ -30,16 +30,17 @@ export class HtmltopdfComponent implements OnInit {
       var doc = new jsPDF('l', 'mm', 'a4', 1);
 
       // Add image Canvas to PDF
-      const bufferX = 10;
-      const bufferY = 10;
+      const marginLR = 10;
+      const marginTB = 20;
       const imgProps = (<any>doc).getImageProperties(img);
-      const pdfWidth = doc.internal.pageSize.getWidth() - 2 * bufferX;
+      const pdfWidth = doc.internal.pageSize.getWidth() - 2 * marginLR;
       const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
-      doc.addImage(img, 'PNG', bufferX, bufferY, pdfWidth, pdfHeight, undefined, 'FAST');
-
+      doc.addImage(img, 'PNG', marginLR, marginTB, pdfWidth, pdfHeight, undefined, 'FAST');
+      
       return doc;
     }).then((doc) => {
-      doc.output('save','Monthly Student Attendance Report.pdf');
+      doc.output('dataurlnewwindow');
+      // doc.output('save','Monthly Student Attendance Report.pdf');
     });
     // doc.output('save', 'filename.pdf'); //Try to save PDF as a file (not works on ie before 10, and some mobile devices)
     // doc.output('datauristring');        //returns the data uri string

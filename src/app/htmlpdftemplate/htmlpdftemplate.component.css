@@ -1,0 +1,19 @@
+#content{
+    width: 1350px;
+}
+table td,th{
+    font-family: Arial;
+    font-size:10px;
+}
+table td.WBLRT, th.WBLRT{
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-top: 1px solid #000000;
+}
+table td.WBTR, th.WBTR{
+    border-right: 1px solid #000000;
+    border-top: 1px solid #000000;
+}
+table tr:last-child td{
+    border-bottom: 1px solid #000000;
+}

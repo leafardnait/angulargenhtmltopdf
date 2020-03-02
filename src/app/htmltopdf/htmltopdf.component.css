@@ -26,11 +26,17 @@ table .weekdays td:not(:first-child) span.verticalText {
 table .monthdays td.Wborder{
     border-top: 1px solid #000000;
     border-right: 1px solid #000000;
-    /* text-align:center; */
+    text-align:center;
     vertical-align: bottom;
     white-space: nowrap;
 }
 table .monthdays td:not(:first-child) span.verticalText {
+    writing-mode: tb-rl;
+    transform: rotate(-90deg);
+    height: 10%;
+    text-align:left;
+}
+table .monthdays td:not(:first-child) span.verticalTextM {
     writing-mode: tb-rl;
     transform: rotate(-90deg);
     height: 10%;

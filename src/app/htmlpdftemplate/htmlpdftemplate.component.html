@@ -1,0 +1,59 @@
+<div id="content" #content>
+    <div id="print-html-pdf">
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th class="WBLRT">First Name</th>
+                    <th class="WBTR">Last Name</th>
+                    <th class="WBTR">ID Number</th>
+                    <th class="WBTR">Gender</th>
+                    <th class="WBTR">CONTEMPORARY PHILIPPINES</th>
+                    <th class="WBTR">21ST CENTURY LITERATURE</th>
+                    <th class="WBTR">P.E AND HEALTH</th>
+                    <th class="WBTR">THEOLOGY 4</th>
+                    <th class="WBTR">INTRODUCTION</th>
+                    <th class="WBTR">CONTEMPORARY PHILIPPINES</th>
+                    <th class="WBTR">21ST CENTURY LITERATURE</th>
+                    <th class="WBTR">P.E AND HEALTH</th>
+                    <th class="WBTR">THEOLOGY 4</th>
+                    <th class="WBTR">INTRODUCTION</th>
+                    <th class="WBTR">P.E AND HEALTH</th>
+                    <th class="WBTR">THEOLOGY 4</th>
+                    <th class="WBTR">INTRODUCTION</th>
+                    <th class="WBTR">P.E AND HEALTH</th>
+                    <th class="WBTR">THEOLOGY 4</th>
+                    <th class="WBTR">INTRODUCTION</th>
+                    <th class="WBTR">THEOLOGY 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let countno of sampleData">
+                    <td class="WBLRT">{{countno}}</td>
+                    <td class="WBTR">Duplicate</td>
+                    <td class="WBTR">01</td>
+                    <td class="WBTR">99-00182</td>
+                    <td class="WBTR">Female</td>
+                    <td class="WBTR"></td>
+                    <td class="WBTR"></td>
+                    <td class="WBTR"></td>
+                    <td class="WBTR"></td>
+                    <td class="WBTR"></td>
+                    <td class="WBTR"></td>
+                    <td class="WBTR"></td>
+                    <td class="WBTR"></td>
+                    <td class="WBTR"></td>
+                    <td class="WBTR"></td>
+                    <td class="WBTR"></td>
+                    <td class="WBTR"></td>
+                    <td class="WBTR"></td>
+                    <td class="WBTR"></td>
+                    <td class="WBTR"></td>
+                    <td class="WBTR"></td>
+                    <td class="WBTR"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<button (click)="downloadPDF()">Print pdf</button>
